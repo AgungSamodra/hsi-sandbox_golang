@@ -19,6 +19,7 @@ func main() {
 }
 ```
 
-Jalankan program menggunakan perintah `go run main.go`. Jika muncul "Halo, Dunia!", maka instalasi Anda sudah benar!
+Jalankan program menggunakan perintah `go run main.go`. 
+Jika sudah silahkan antum/na upload screen-capture di grup channel Latihan dan Tugas di Telegram
 
 Selamat belajar!
