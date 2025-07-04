@@ -42,17 +42,7 @@ Selamat datang di Level 0 **HSI - Golang Sandbox**! Pada level ini, Anda akan me
 2. Buka VS Code dan instal ekstensi Go.
 3. Ikuti petunjuk untuk konfigurasi workspace Go.
 
-### Pengaturan Sublime Text
 
-1. Instal Sublime Text dari [situs resmi](https://www.sublimetext.com/).
-2. Instal paket GoSublime melalui Package Control.
-3. Buat build system baru dengan isi berikut:
-   ```json
-   {
-       "cmd": ["go", "run", "$file"],
-       "selector": "source.go"
-   }
-   ```
 
 ## Verifikasi Instalasi
 
