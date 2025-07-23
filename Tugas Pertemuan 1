@@ -1,0 +1,31 @@
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
+
+func main() {
+	fmt.Println("--- Konverter Suhu ---")
+
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Masukkan suhu dalam Celsius: ")
+
+	input, _ := reader.ReadString('\n')
+	input = strings.TrimSpace(input)
+
+	celsius, err := strconv.ParseFloat(input, 64)
+	if err != nil {
+		fmt.Println("> Input Tidak Valid, hanya menerima angka")
+		return
+	}
+
+	reamur := celsius * 4 / 5
+	fahrenheit := (celsius * 9 / 5) + 32
+
+	fmt.Printf("> Suhu dalam Reamur = %.2f\n", reamur)
+	fmt.Printf("> Suhu dalam Fahrenheit = %.2f\n", fahrenheit)
+}
