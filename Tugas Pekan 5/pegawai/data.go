@@ -1,0 +1,27 @@
+package pegawai
+
+import "fmt"
+
+// Struct Pegawai
+type Pegawai struct {
+	Nama        string
+	Posisi      string
+	GajiBulanan float64
+}
+
+// Method untuk menghitung gaji tahunan
+func (p Pegawai) HitungGajiTahunan() float64 {
+	return p.GajiBulanan * 12
+}
+
+// Interface InformasiPegawai
+type InformasiPegawai interface {
+	TampilkanInformasi()
+}
+
+// Implementasi interface
+func (p Pegawai) TampilkanInformasi() {
+	fmt.Printf("Nama   : %s\n", p.Nama)
+	fmt.Printf("Posisi : %s\n", p.Posisi)
+	fmt.Printf("Gaji Tahunan: Rp %.2f\n", p.HitungGajiTahunan())
+}
